@@ -215,6 +215,9 @@ header #menu{
     border-radius: 12px;
     margin-bottom: 20px;
 }
+#course-details .overwiew .play-btn{
+    border-radius: 50%;
+}
 #course-details .overwiew .course-head{
     display: flex;
     align-items: flex-start;
@@ -310,10 +313,32 @@ header #menu{
     text-decoration: none;
     font-size: .8rem;
     padding: 13px 45px;
-    font-weight: 600;
+    font-weight: 700;
     border-radius: 5px;
     color: #fff;
     background: #f1c40f; 
+}
+#course-details .enroll .enroll-btn .blue{
+    font-size: 15px;
+    
+}
+#course-details .enroll .enroll-btn .fav a{
+    text-decoration: none;
+    font-size: .8rem;
+    padding: 13px 35px;
+    font-weight: 900;
+    border-radius: 5px;
+    color: #fff;
+    background: #f1c40f; 
+    margin: 20px;
+}
+#course-details .enroll .enroll-btn .fav a:hover{
+    cursor: pointer;
+    color: #f39c12;
+}
+#course-details .enroll .enroll-btn .blue:hover{
+    color: #f39c12;
+    cursor: pointer;
 }
 #course-details .overwiew .play-btn{
     width: 60px;
@@ -324,24 +349,29 @@ header #menu{
     cursor:pointer; 
 }
 
-.video-player{
+#course-details .video-player{
+    display: flex;
     width: 50%;
     position: absolute;
     left: 35%;
     top: 95%;
     transform: translate(-50%, -50%);
     display: none;
+    width: 100%;
+    max-width: 800px;
 
 }
 video:focus{
     outline: none;
+}
+#myVideo{
+    width: 100%;
 }
 .close-btn{
     position: absolute;
     left: 90%;
     top: 8%;
     width: 30px;
-
 }
 
 
@@ -355,6 +385,7 @@ video:focus{
 @media (max-width:780px){
     html{
         font-size: 55%;
+        width: fit-content;
     }
     header #menu{
         display: block;
@@ -388,13 +419,38 @@ video:focus{
     header .navbar.nav-toggle{
         top: 6.4rem;
     }
-
-    
-
-}
-@media (max-width:500px){
-    html{
-        font-size: 50%;
+    #about-home{
+        width: 180%;
+        
     }
+    /* section */
+    #course-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 8vw 4vw;
+        width: 180%;
+        /* height: 100%; */
+    } 
+     .enroll{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #course-details .overwiew .course-img {
+        width: 100%;
+        height: 100%;
+    }
+    #course-details .overwiew .play-btn {
+        width: 20px;
+        height: 20px;
+        left: 60%;
+    }
+    #course-details .enroll{
+        margin-top: 25px;
+    }
+    
 
 }

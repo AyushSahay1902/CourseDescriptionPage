@@ -14,33 +14,28 @@
     <header>
 
         <div id="menu" class="fas fa-bars"></div>
-        <a href="#" class="logo"><i class="fas fa-user-graduate"></i>Ui Path Acedemy</a>
+        <a href="#" class="logo"><img src="./CSI VIT LOGO.png" class="logo-img"></img> Ui Path Acedemy</a>
         <nav class="navbar">
             <ul>
-                <li><a  href="#Home">Home</a></li>                
-                <li><a href="#About">About</a></li>                
-                <li><a class="active" href="#Courses">Courses</a></li>                
+                <li><a  href="#Home">Home</a></li>                                
+                <li><a class="active" href="#Courses">Courses</a></li>
+                <li><a href="#About">MyLearning</a></li>                
                 <!-- <li><a href="#Hire">HireMe</a></li>                 -->
                 <li><a href="#Contact">ContactUs</a></li>                
             </ul>
         </nav>
 
-        <div id="login" class="fas fa-user-circle"></div>
+        <div class="box">
+            <div class="login-btn" id="login-btn">
+                <a href="#login">Login</a>
+            </div>
+        </div>
     </header>
     <!-- Header Section Ends -->
-    <!-- login form -->
-    <div class="login-form">
-        <form action="">
-            <h3>Login</h3>
-            <input type="email" placeholder="email" class="box">
-            <input type="password" placeholder="password" class="box">
-            <p>forget password? <a href="#">clic here</a></p>            
-            <p>don't have an acount? <a href="#">register now</a></p>            
-            <input type="submit" class="btn" value="login">
-            <i class="fas fa-times"></i>
 
-        </form>
-    </div>
+
+
+    
     <section id="about-home">
         <h2>Ui Data Service</h2>
         <p>This course is dedicated to RPA Developers and Solution Architects who work with complex business data and need an easy way to better structure and store the information.</p>
@@ -50,9 +45,8 @@
     <!-- Course Details -->
     <section id="course-details">
         <div class="overwiew">
-            <img class="course-img" src="./vid-banner2.jfif" alt="video-player">
-            <img src="./play icon.jfif"
-             alt="" class="play-btn" onclick="playvideo('./videoplayback.mp4')">
+            <img class="course-img" src="./vid-banner2.jfif">
+            <img src="./play icon.jfif" alt="" class="play-btn" onclick="playVideo('./videoplayback.mp4')">
             <div class="course-head">
                 <div class="c-name">
                     <h2>Ui data Service Course</h2>
@@ -67,7 +61,38 @@
                 </div>
                 <span>$49.99</span>
             </div>
-            <br>
+
+            <!-- Sliding bar through animation -->
+            <!-- <div class="slide">
+                <ul>
+                    <li class="list-active">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="arrow-round-up">
+                            </span>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="arrow-round-up">
+                            </span>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="arrow-round-up">
+                            </span>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <div class="indecator"></div>
+                </ul>
+            </div> -->
+            <!-- <br> -->
             <hr>
             <br>
             
@@ -90,15 +115,15 @@
                 <p><i class="far fa-check-circle"></i>Storing Value in Data Service</p>
                 <p><i class="far fa-check-circle"></i>Practice</p>
             </div>
+            <div class="video-player" id="videoPlayer">
+                <video width="100%" controls autoplay id="myVideo">
+                    <source src="./videoplayback.mp4" type="video/mp4">
+                </video> 
+                <img src="./close-button.jfif" class="close-btn" alt=""  onclick="stopVideo()">
+            </div>
             
         </div> 
-        <div class="video-player" id="video-player">
-            <video src="./videoplayback.mp4" width="100%" controls autoplay id="myVideo">
-                <source src="./videoplayback.mp4" type="video/mp4" >
-            </video>
-            <img src="./close-button.jfif"
-            alt="" class="close-btn" onclick="stopVideo()">
-        </div>
+        
         
         <div class="enroll">
             <h3>Ui Data Service Includes:</h3>
@@ -112,12 +137,16 @@
             <p><i class="far fa-newspaper"></i>Certificate after completion</p>
             <div class="enroll-btn">
                 <a href="#" class="blue"> Enroll Courses</a>
+
                 <div class="fav">
-                    <a href="#" class="fas fa-favourite">Favourite</a>
+                    <a href="#" class="fav-btn">Favourite</a>
+                </div>
+                <div class="share">
                     <a href="#" class="fas fa-share">Share</a>
+                    
                 </div>
             </div>
-            </div>   
+        </div>   
 
     </section>
     
@@ -132,7 +161,7 @@
 
 
 
-
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="Script.js" href=""></script>
     

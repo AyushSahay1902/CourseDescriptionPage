@@ -1,5 +1,6 @@
 :root{
-    --gradient:linear-gradient(90deg, #f1c40f, #f39c12);
+    --gradient:linear-gradient(90deg, #f1eee1, #2c2c2b);
+    --clr: #222327;
 }
 
 
@@ -23,7 +24,7 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
 }
-html::-webkit-scrollbar{
+/* html::-webkit-scrollbar{
     width: 1.5rem;
 }
 html::-webkit-scrollbar-track{
@@ -31,22 +32,14 @@ html::-webkit-scrollbar-track{
 }
 html::-webkit-scrollbar-thumb{
     background: linear-gradient(#f1c40f, #f39c12);
-}
-
+} */
+/* ---------------------------------------------- */
 body{
     height: 300rem;
+    /* display: flex; */
+    /* justify-content: space-between; */
 }
-.btn{
-    padding: .7rem 3rem;
-    font-size: 2rem;
-    color: #fff;
-    background: var(--gradient);
-    border-radius: 50%;
-    margin-top: 5rem;
-    cursor: pointer;
-    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
-}
-
+/* ----------------------------------------------------- */
 header{
     width: 100%;
     display: flex;
@@ -56,13 +49,22 @@ header{
     top: 0;left: 0;
     z-index: 1000;
     padding: 1.5rem 7%;
-    background: var(--gradient);
+    /* background: var(--gradient); */
     box-shadow: 0 .1rem .3rem rgba(0,0,0,0.3);
+    background-color: black;
+    color: white;
 }
 header .logo{
     color: #fff;
     font-size: 2.5rem;
 }
+header .logo .logo-img{
+    height: 40px;
+    width: 50px;
+    margin-top: 5px;
+}
+
+
 /* header .navbar{
     position: fixed;
     top: -120%;left: 0;
@@ -84,15 +86,30 @@ header .navbar ul li a{
 }
 header .navbar ul li a .active,
 header .navbar ul li a:hover{
-    color: #444;
+    color: crimson;
 }
-header #login{
-    font-size: 3rem;
+
+header #login-btn{
+    font-size: 2rem;
     color: #fff;
     cursor: pointer;
+    margin: 5px;
+    padding: 5px;
 }
-header #login:hover{
-    color: #444;
+header .box{
+    width: 80px;
+    margin: 0px;
+    padding: 0px;
+    background-color: tomato;
+    border-radius: 10px;
+    border-style: outset;
+}
+header #login-btn a{
+    color: white;
+    margin-left: 8px;
+}
+header #login-btn:hover{
+    color: crimson;
 }
 header #menu{
     font-size: 3rem;
@@ -100,83 +117,11 @@ header #menu{
     cursor: pointer;
     display: none;
 }
-.login-form{
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: -120%;left: 0;
-    z-index: 1000;
-    background: rgba(0,0,0,.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.login-form.popup{
-    top: 0;
-}
-.login-form form{
-    width: 35rem;
-    background: #fff;
-    margin: 0 2rem;
-    padding: 1rem 3rem;
-    border-radius: .5rem;
-    box-shadow: 0 .1rem .3rem #333;
-    position: relative;
-}
-.login-form form h3{
-    font-size: 3rem;
-    color: #f39c12;
-    padding: 1rem 0;
+/* -------------------------------------------------------------------------------------------------------- */
 
-}
-.login-form form .box{
-    width: 100%;
-    padding: 1rem 0;
-    margin: 1rem 0;
-    border-bottom: .2rem solid #666;
-    font-size: 1.3rem;
-    color: #333;
-    text-transform: none;
-}
 
-.login-form form .box::placeholder{
-    text-transform: capitalize;
-}
-.login-form form .box:focus{
-     border-color: #f39c12;
-}
-.login-form form .box:nth-child(3){
-    margin-bottom: 5rem;
-}
-.login-form form p{
-    font-size: 1.4rem;
-    color: #666;
-    padding: .5rem 0;
-}
-.login-form form p a{
-    color: #f39c12;
-}
-.login-form form .btn{
-    width: 100%;
-    margin: 2rem 0;
-}
-.login-form form .btn:hover{
-    background: #444;
-}
-.login-form form .fa-times{
-    position: absolute;
-    top: 1.5rem;right: 2rem;
-    font-size: 2.5rem;
-    cursor: pointer;
-    color: #999;
-
-}
-.login-form form .fa-times:hover{
-    color: #444;
-
-}
 #about-home{
-    background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url(./home-bg.jpg);
+    background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url(./UI\ banner.jfif);
     width: 100%;
     height: 50vh;
     background-size: cover;
@@ -191,17 +136,19 @@ header #menu{
 
 #about-home h2{
     color: #fff;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     letter-spacing: 1px;
 }
 #about-home p{
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 2rem;
     letter-spacing: 1px;
 }
+/* -------------------------------------------------------------------------- */
+
 #course-details{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between ;
     align-items: flex-start;
     padding: 8vw;
 }
@@ -234,7 +181,7 @@ header #menu{
 
 }
 #course-details .overwiew .course-head .c-name .star i{
-    color: #f1c40f;
+    color:black;
     font-size: 0.9rem; 
 }
 #course-details .overwiew .course-head .c-name p{
@@ -245,10 +192,115 @@ header #menu{
     border-radius: 5px;
     color: #fff;
     font-size: 24px;font-weight: 700;
-    background-color: #f39c12;
+    background-color:White
 }
+/* ----------------------------------------------------------------------------------- */
+#course-details .overwiew .slide{
+    width: 800px;
+    height: 50px;
+    background: rgb(34, 23, 23);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 50px;
+}
+#course-details .overwiew .slide ul{
+    display: flex;
+    width: 350px;
+}
+#course-details .overwiew .slide ul li{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+#course-details .overwiew .slide ul li a{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+#course-details .overwiew .slide ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: white;
+}
+#course-details .overwiew .slide ul li.list-active a .icon{
+    transform: translateY(-35px);
+    color: white;
+}
+#course-details .overwiew .slide ul li a .text{
+    /* position:fixed; */
+    color: white;
+    font-weight: 500;
+    font-size: 2em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(-40px);
+}
+#course-details .overwiew .slide ul li.list-active
+a .text{
+    transform: translateY(-50px);
+    opacity: 1;
+}
+.indecator{
+    position: absolute;
+    top: -60%;
+    width: 60px;
+    height: 60px;
+    background:crimson;
+    border-radius: 50%;
+    border: 6px solid var(crimson);
+    transition: 0.5s; 
+}
+.indecator::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -10px 0 0 var(crimson);
+}
+.indecator::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;    
+    border-top-left-radius: 20px;
+    box-shadow: 0px -10px 0 0 var(crimson);
+}
+#course-details .overwiew .slide ul li:nth-child(1).list-active ~ .indecator{
+    transform: translateX(calc(70px * 0));
+}
+#course-details .overwiew .slide ul li:nth-child(2).list-active ~ .indecator{
+    transform: translateX(calc(70px * 1));
+}
+#course-details .overwiew .slide ul li:nth-child(3).list-active ~ .indecator{
+    transform: translateX(calc(70px * 2));
+}
+    /* ----------------------------------------------------------------------------------------- */
 #course-details .overwiew .brief{
     margin: 6px 0;
+    font-weight: 900;
 }
 #course-details .overwiew .brief h4{
     font-size: 15px;
@@ -267,16 +319,17 @@ header #menu{
     margin-top: 40px;
 }
 #course-details .overwiew .brief p i{
-    color: #654ce4;
+    color: brown;
     font-weight: 700;
     margin-right: 20px;
 }
 #course-details .overwiew .brief h3{
-    color: rgba(241, 147, 7);
+    color: black;
     font-weight: 800;
     padding:2px;
     font-size: 20px;
 }
+/* ----------------------------------------------------------------------------------- */
 #course-details .enroll{
     width: 40%;
     padding: 0 30px 30px 30px;
@@ -287,7 +340,7 @@ header #menu{
     padding-bottom: 5px;
     font-size: 20px;
     font-weight: 700;
-    color: #f39c12;
+    color:black
 }
 #course-details .enroll p{
     font-size: 15px;
@@ -296,18 +349,21 @@ header #menu{
 
 }
 #course-details .enroll p i{
-    color: #f39c12;
+    color:black;
     /* font-weight: 500; */
-    margin-right: 18px;
+    margin-right: 15px;
     width: 16px;
     height: 16px;
     line-height: 16px;
     text-align: center;
 }
-#course-details .enroll .enroll-btn{
-    padding: 25px 0 20px 0;
+
+#course-details .enroll .enroll-btn {
+    padding: 30px 0px 40px 0px;
     margin: auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 #course-details .enroll .enroll-btn a{
     text-decoration: none;
@@ -316,62 +372,97 @@ header #menu{
     font-weight: 700;
     border-radius: 5px;
     color: #fff;
-    background: #f1c40f; 
+    background: black; 
 }
 #course-details .enroll .enroll-btn .blue{
     font-size: 15px;
-    
 }
-#course-details .enroll .enroll-btn .fav a{
+#course-details .enroll .enroll-btn .fav{
+    padding: 0px;
+    margin-left: 0px;
+    text-align: center;
+    /* background: black; */
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#course-details .enroll .enroll-btn .fav a {
+    /* left: 0px; */
     text-decoration: none;
-    font-size: .8rem;
-    padding: 13px 35px;
-    font-weight: 900;
-    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 15px 40px;
+    font-weight: 700;
+    border-radius: 10px;
     color: #fff;
-    background: #f1c40f; 
-    margin: 20px;
+    background: black;
 }
-#course-details .enroll .enroll-btn .fav a:hover{
-    cursor: pointer;
-    color: #f39c12;
+
+#course-details .enroll .enroll-btn .share{
+    padding: 0px;
+    /* margin-left: 0px; */
+    text-align: center;
+    /* background: black; */
+    margin-right: 20px;
+    margin-top: -45px;
+    display: flex;
+    flex-direction:row-reverse;
 }
+#course-details .enroll .enroll-btn .share a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 15px 43px;
+    font-weight: 700;
+    border-radius: 10px;
+    color: #fff;
+    background: black;
+}
+
+
+
+#course-details .enroll .enroll-btn .fav-btn:hover,
+#course-details .enroll .enroll-btn .fas:hover,
 #course-details .enroll .enroll-btn .blue:hover{
-    color: #f39c12;
+    color:brown;
     cursor: pointer;
 }
+/* --------------------------------------------------------------------------------- */
 #course-details .overwiew .play-btn{
     width: 60px;
     position: absolute;
     left: 35%;
     top: 95%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     cursor:pointer; 
 }
 
-#course-details .video-player{
-    display: flex;
-    width: 50%;
+#course-details .overwiew .video-player{
+    /* display: flex; */
+    width: 80%;
     position: absolute;
-    left: 35%;
-    top: 95%;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
     display: none;
-    width: 100%;
-    max-width: 800px;
+    /*width: 100%;
+    max-width: 800px; */
+    margin-top: 250px ;
 
 }
-video:focus{
+ video:focus{
     outline: none;
+    border-radius: 10px;
 }
-#myVideo{
+/* #myVideo{
     width: 100%;
-}
+} */
 .close-btn{
     position: absolute;
-    left: 90%;
-    top: 8%;
+    right: 10px;
+    top: 10px;
     width: 30px;
+    cursor: pointer;
 }
 
 
@@ -411,7 +502,7 @@ video:focus{
     }
     header .navbar ul li a .active,
     header .navbar ul li a:hover{
-        color: #f39c12;
+        color:White
     }
     .fa-times{
         transform: rotate(180deg);

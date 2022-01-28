@@ -477,7 +477,7 @@ header #menu{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 5vw 4vw;
+        padding: 8vw 4vw;
         width: 180%;
         /* height: 100%; */
     } 
@@ -489,8 +489,8 @@ header #menu{
         width: 40px;
         /* position:initial; */
         height: 40px;
-        left: 78em;
-        top: 85em;        
+        left: 113em;
+        top: 100em;        
     }
     #course-details .enroll{
         margin-top: 25px;

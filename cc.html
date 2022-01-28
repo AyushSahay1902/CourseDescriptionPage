@@ -1,92 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Hello, world!</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Platform</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <!-- <div id="menu" class="fas fa-bars"></div> -->
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./CSI VIT LOGO.png" alt="" width="30" height="24"
-                    class="d-inline-block align-text-top">
-                Ui Path Academy
-            </a>
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Courses</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">MyLearnings</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">ContactUs</a>
-                </li>
-              </ul>
-              <button type="button" class="btn btn-dark">Login</button>
-        </div>
-    </nav>
-    <!-- Navbar Section Ends -->
-    <!-- Home banner section starts -->
-    <div class="container-fluid">
-        <main class="container-fluid mt-2">
-            <div class="bg-light p-5 rounded">
-              <h1>Ui Data Service</h1>
-              <p class="lead">This course is dedicated to RPA Developers and Solution Architects who work with complex business data and need an easy way to better structure and store the information.</p>
-              <a class="btn btn-lg btn-primary" href="/docs/5.1/components/navbar/" role="button">Enroll Now</a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Bree+Serif&family=Open+Sans:ital,wght@1,300&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section Sterts -->
+    <header>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <a href="#" class="logo"><img src="./CSI VIT LOGO.png" class="logo-img"></img> Ui Path Acedemy</a>
+        <nav class="navbar">
+            <ul>
+                <li><a  href="#Home">Home</a></li>                                
+                <li><a class="active" href="#Courses">Courses</a></li>
+                <li><a href="#About">MyLearning</a></li>                
+                <!-- <li><a href="#Hire">HireMe</a></li>                 -->
+                <li><a href="#Contact">ContactUs</a></li>                
+            </ul>
+        </nav>
+
+        <div class="box">
+            <div class="login-btn" id="login-btn">
+                <a href="#login">Login</a>
             </div>
-          </main>
-    </div>
-    <!-- Home banner section ends -->
-    <!-- Course Description starts -->
-    <div class="row align-items-md-stretch m-3">
-        <div class="col-md-8">
-          <div class="h-100 p-5 text-black bg-light rounded-3">
-            <h2>Course Description</h2>
-            
-            <p>This course is dedicated to RPA Developers and Solution Architects who work with complex business data and need an easy way to better structure and store the information.</p>
+        </div>
+    </header>
+    <!-- Header Section Ends -->
+
+
+
+    
+    <section id="about-home">
+        <h2>Ui Data Service</h2>
+        <p>This course is dedicated to RPA Developers and Solution Architects who work with complex business data and need an easy way to better structure and store the information.</p>
+        
+    </section>
+
+    <!-- Course Details -->
+    <section id="course-details">
+        <div class="overwiew">
+            <img class="course-img" src="./vid-banner2.jfif">
+            <img src="./play icon.jfif" alt="" class="play-btn" onclick="playVideo('./videoplayback.mp4')">
             <div class="course-head">
                 <div class="c-name">
-                    <!-- <h2>Ui data Service Course</h2> -->
-                    <div class="star text-black">
+                    <h2>Ui data Service Course</h2>
+                    <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    
+                    <p>This course is dedicated to RPA Developers and Solution Architects who work with complex business data and need an easy way to better structure and store the information.</p>
                 </div>
-                <!-- <span>$49.99</span> -->
+                <span>$49.99</span>
             </div>
-            <div class="container">
-                <p>To acess this course, click-on 
-                <button class="btn btn-outline-dark" type="button">Enroll Now</button></p>
+
+            <!-- Sliding bar through animation -->
+            <div class="slide">
+                <p>To acess the course , click on </p>
+                <a class="btn"
+                href="#">Enroll-Now</a>
             </div>
-            <div class="container bg-dark" width="fit-content">
+            <div class="slide-2">
                 <ul>
-                    <li><a  href="index.html">Overview</a></li>                                
+                    <li ><a  href="index.html">Overview</a></li>                                
                     <li class="active"><a  href="cc.html">Courses Curriculum</a></li>
                     <li><a href="rc.html">related-courses</a></li>                
                                    
                 </ul>
             </div>
-            <div class="container">
-                <!-- <img src="./overview-2.png" alt="" height="400px" width="100%"> -->
+            <div class="overview-2">
+                <!-- <img src="./overview-2.png" alt="" height="400px" width="1000px"> -->
             </div>
-            <br>
+            <!-- <br> -->
             <hr>
-            <div class="container">
+            <br>
+            
+            <div class="brief">
                 <h3>Course Details</h3>
                 <h4>Audience:</h4>
                 <p>RPA Developers, Solution Architects</p>
@@ -105,72 +102,43 @@
                 <p><i class="far fa-check-circle"></i>Storing Value in Data Service</p>
                 <p><i class="far fa-check-circle"></i>Practice</p>
             </div>
-          </div>
-        </div>
-        <!-- ---------------------------------------------------------------------------------- -->
-        <div class="col-md-4">
-          <div class="h-100 p-5 text-white bg-dark border rounded-3">
-            <h2>Ui Data Service Includes:</h2>
-            <div class="col-sm-4 center">
-                <!-- <div height="200px" width="350px" class="embed-responsive embed-responsive-16by9">
-                    <iframe  class="embed-responsive-item" src="https://youtu.be/embed/HjAAC6BGp5c?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
-                </div> -->
-                <img class="course-img" src="./vid-banner2.jfif" height="200px" width="fit-content">
-                <img src="./play icon.jfif" alt="" class="play-btn"  onclick="playVideo('./videoplayback.mp4')">
-                <!-- <audio controls autoplay id="myAudio" onclick="playVideo()">
-                    <source src="./Luke-Bergs-Bliss.mp3" type="audio/mp3">
-                </audio> -->
-                <div class="video-player" id="videoPlayer">
+            <div class="video-player" id="videoPlayer">
+                <video width="100%" controls autoplay id="myVideo">
+                    <source src="./videoplayback.mp4" type="video/mp4">
+                </video> 
+                <img src="./close-button.jfif" class="close-btn" alt=""  onclick="stopVideo()">
+            </div>
+            
+        </div> 
+        
+        
+        <div class="enroll">
+            <h3>Ui Data Service Includes:</h3>
+            <hr>
+            <p><ion-icon name="download"></ion-icon>Downloadable Resources</p>
+            <p><ion-icon name="time"></ion-icon>Full Life-time access</p>
+            <p><ion-icon name="TV"></ion-icon>Access on mobile and TV</p>
+            <p><ion-icon name="code-working"></ion-icon>Assignments</p>
+            <p><ion-icon name="mail-unread"></ion-icon>Certificate after completion</p>
+            <div class="enroll-btn">
+                <a href="#" class="blue"> Enroll Courses</a>
 
-                    <video width="100%"  controls autoplay id="myVideo">
-                        <source src="./videoplayback.mp4"  type="video/mp4">
-                    </video> 
-                    <img src="./close-button.jfif" class="close-btn" alt=""  onclick="stopVideo()">
+                <div class="fav">
+                    <a href="#" class="fav-btn">Favourite</a>
+                </div>
+                <div class="share">
+                    <a href="#" class="fas fa-share">Share</a>
+                    
                 </div>
             </div>
-            <br>
-            <br>
+        </div>   
 
+    </section>
 
-            <div class="container text-white">
-                <!-- <hr> -->
-                <p><ion-icon name="download"></ion-icon>Downloadable Resources</p>
-                <p><ion-icon name="time"></ion-icon>Full Life-time access</p>
-                <p><ion-icon name="TV"></ion-icon>Access on mobile and TV</p>
-                <p><ion-icon name="code-working"></ion-icon>Assignments</p>
-                <p><ion-icon name="mail-unread"></ion-icon>Certificate after completion</p>
-    
-            </div>
-            <div class="buttons">
-                <button class="btn btn-outline-secondary" type="button">Enroll-Now</button>
-                <button class="btn btn-outline-secondary" type="button">Favourite</button>
-                <button class="btn btn-outline-secondary" type="button">Share</button>
-            </div>
-
-          </div>
-        </div>
-
-        
-        
-      </div>
-
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="Script.js" href=""></script>
-
-  </body>
+    
+</body>
 </html>

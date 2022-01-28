@@ -76,7 +76,7 @@ video:focus{
     border: #fff ;
 }
 
-/* Media Queries */
+/* Media Queries  */
 @media (max-width:780px){
     .play-btn{
         width: 40px;

@@ -41,3 +41,7 @@ var videoPlayer = document.getElementById("videoPlayer");
     }
     item.forEach((item) =>
     item.addEventListner('click',activeLink));
+
+$(document).on('click', 'ul li', function(){
+    $(this).addClass('active').siblings().removeClass('active');
+    })

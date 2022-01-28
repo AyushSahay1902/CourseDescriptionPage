@@ -32,9 +32,6 @@
         </div>
     </header>
     <!-- Header Section Ends -->
-
-
-
     
     <section id="about-home">
         <h2>Ui Data Service</h2>
@@ -63,10 +60,21 @@
             </div>
 
             <!-- Sliding bar through animation -->
-            <div class="slide">
+            <div class="slide" width="fit-content">
                 <p>To acess the course , click on </p>
                 <a class="btn"
                 href="#">Enroll-Now</a>
+            </div>
+            <div class="slide-2" width="fit-content">
+                <ul>
+                    <li class="active"><a  href="index.html">Overview</a></li>                                
+                    <li><a  href="cc.html">Courses Curriculam</a></li>
+                    <li><a href="rc.html">related-courses</a></li>                
+                                   
+                </ul>
+            </div>
+            <div class="overview-2">
+                <img src="./overview-2.png" alt="" height="400px" width="fit-content">
             </div>
             <!-- <br> -->
             <hr>
@@ -91,9 +99,13 @@
                 <p><i class="far fa-check-circle"></i>Storing Value in Data Service</p>
                 <p><i class="far fa-check-circle"></i>Practice</p>
             </div>
+
             <div class="video-player" id="videoPlayer">
+                <!-- <audio controls autoplay id="myAudio" onclick="playVideo()">
+                    <source src="./Luke-Bergs-Bliss.mp3" type="audio/mp3">
+                </audio> -->
                 <video width="100%" controls autoplay id="myVideo">
-                    <source src="./videoplayback.mp4" type="video/mp4">
+                    <source src="./videoplayback.mp4"  type="video/mp4">
                 </video> 
                 <img src="./close-button.jfif" class="close-btn" alt=""  onclick="stopVideo()">
             </div>
@@ -104,13 +116,11 @@
         <div class="enroll">
             <h3>Ui Data Service Includes:</h3>
             <hr>
-            <p><i class="far fa-newspaper"></i>52 hour Video</p>
-            <p><i class="far fa-newspaper"></i>75 articles</p>
-            <p><i class="far fa-newspaper"></i>Downloadable Resources</p>
-            <p><i class="far fa-newspaper"></i>Full Life-time access</p>
-            <p><i class="far fa-newspaper"></i>Access on mobile and TV</p>
-            <p><i class="far fa-newspaper"></i>Assignments</p>
-            <p><i class="far fa-newspaper"></i>Certificate after completion</p>
+            <p><ion-icon name="download"></ion-icon>Downloadable Resources</p>
+            <p><ion-icon name="time"></ion-icon>Full Life-time access</p>
+            <p><ion-icon name="TV"></ion-icon>Access on mobile and TV</p>
+            <p><ion-icon name="code-working"></ion-icon>Assignments</p>
+            <p><ion-icon name="mail-unread"></ion-icon>Certificate after completion</p>
             <div class="enroll-btn">
                 <a href="#" class="blue"> Enroll Courses</a>
 
@@ -125,18 +135,8 @@
         </div>   
 
     </section>
-    
-
-
-
-
-
-
-
-
-
-
-
+    <!-- /////////////////////////////////////////////////////////////// -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="Script.js" href=""></script>
